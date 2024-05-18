@@ -12,3 +12,48 @@ margin:  2.5rem;
     flex-wrap: wrap ;
     justify-content: center;
 }
+
+
+/* movieList.css */
+.movie__list {
+    padding: 20px;
+}
+
+.list__title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.list__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pagination button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-size: 16px;
+}
