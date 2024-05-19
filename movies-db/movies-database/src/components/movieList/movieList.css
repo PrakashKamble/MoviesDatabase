@@ -1,4 +1,4 @@
-.movie__list {
+/* .movie__list {
     padding: 0 3rem 3rem 3rem;
 }
 
@@ -14,7 +14,51 @@ margin:  2.5rem;
 }
 
 
-/* movieList.css */
+
+.movie__list {
+    padding: 20px;
+}
+
+.list__title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.list__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pagination button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-size: 16px;
+} */
+
+
 .movie__list {
     padding: 20px;
 }
@@ -57,3 +101,53 @@ margin:  2.5rem;
 .pagination span {
     font-size: 16px;
 }
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+    .movie__list {
+        padding: 10px;
+    }
+
+    .list__title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .list__cards {
+        gap: 10px;
+    }
+
+    .pagination button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .pagination span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .movie__list {
+        padding: 5px;
+    }
+
+    .list__title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .list__cards {
+        gap: 5px;
+    }
+
+    .pagination button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .pagination span {
+        font-size: 12px;
+    }
+}
+

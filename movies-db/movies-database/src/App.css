@@ -5,4 +5,15 @@
     background-color: black; 
     color: white;
     } 
-    
+    /* Responsive adjustments */
+@media (max-width: 768px) {
+    .App {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .App {
+        padding: 5px;
+    }
+}

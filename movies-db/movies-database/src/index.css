@@ -6,3 +6,32 @@
 html,body, #root, .App{
     min-length:100%;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+}

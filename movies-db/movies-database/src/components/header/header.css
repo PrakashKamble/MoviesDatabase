@@ -1,4 +1,4 @@
-.header {
+/* .header {
     margin: 0 2.5rem;
     padding: .5rem 0;
     align-items: center;
@@ -17,7 +17,6 @@ a > span{
     font-size: 1.3rem;
     cursor: pointer;
     color: white;
-    /* text-transform: capitalize; */
     
 
 }
@@ -34,7 +33,6 @@ a > span:hover {
 .user__avatar {
     font-size: 2rem;
 }
-/* header.css */
 .header {
     display: flex;
     justify-content: space-between;
@@ -78,4 +76,112 @@ a > span:hover {
     border-radius: 0 4px 4px 0;
     background-color: #ffcc00;
     cursor: pointer;
+} */
+
+
+/* General header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+}
+
+.header__icon {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.headerLeft span {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.headerLeft a > span {
+    font-size: 1.3rem;
+}
+
+.headerLeft a > span:hover {
+    color: red;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+}
+
+.searchInput {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.searchButton {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #ffcc00;
+    cursor: pointer;
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .headerLeft {
+        margin-bottom: 10px;
+    }
+
+    .headerLeft span {
+        margin-right: 10px;
+        font-size: 1rem;
+    }
+
+    .header__icon {
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .headerRight {
+        width: 100%;
+    }
+
+    .searchInput, .searchButton {
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 5px;
+    }
+
+    .headerLeft span {
+        margin-right: 5px;
+        font-size: 0.9rem;
+    }
+
+    .header__icon {
+        height: 30px;
+        margin-right: 5px;
+    }
+
+    .searchInput, .searchButton {
+        font-size: 14px;
+        padding: 5px;
+    }
 }
