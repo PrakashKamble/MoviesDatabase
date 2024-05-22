@@ -1,17 +1,18 @@
 /* searchResults.css */
 .search__results {
     padding: 20px;
-}
-
-.results__title {
+  }
+  
+  .results__title {
     text-align: center;
     margin-bottom: 20px;
     font-size: 24px;
-}
-
-.results__cards {
+  }
+  
+  .results__cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-}
+  }
+  
